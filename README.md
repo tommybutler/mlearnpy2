@@ -35,22 +35,28 @@ fi
 
 ## Packages included, listed in no particular order
 - cython
+- gensim
 - h5py, h5py-wrapper, h5json, h5config, h5browse, h5df
 - keras
 - jupyter notebook
 - lasagne
 - matplotlib
+- networkx
 - nolearn
 - numpy
 - pandas
 - pandas2sklearn
 - pandas-transformers
+- plotly
 - prophet (fbprophet)
+- pylds
+- pymc
 - pystan
 - pytorch
 - pytz
 - scikit-learn (sklearn)
 - scipy
+- seaborn
 - six
 - skflow
 - sklearn-compiledtrees
@@ -60,6 +66,7 @@ fi
 - sklearn-pandas
 - spark-sklearn
 - spyder IDE (use X-forwarding over ssh)
+- statsmodels
 - tensorflow
 - theano
 - virtualenvwrapper
