@@ -10,7 +10,8 @@ GPU support is not included, as this setup is tailored to a headless VM/bare met
 This repository of utilities does not come with an installer.  It is also assumed you will know how to copy these files, where to put them, and how to use them--simply based on how they are named.  DO NOT blindly copy these over existing files.  If you don't know what you're doing, get help from a friend who does.
 
 # Setup
-1. Add this to your .bashrc
+1. clone this repo somewhere on your target Linux host (`/var/tmp`?)
+1. add this to end of your .bashrc file
 ```bash
 # Python VirtualEnvWrapper
 if [[ -e /usr/local/bin/virtualenvwrapper.sh ]]
@@ -20,15 +21,14 @@ then
    source /usr/local/bin/virtualenvwrapper.sh
 fi
 ```
-1. verify sha512 checksums in, and the gpg signature for the sha512sums.txt file
-1. **MAKE NOTE! one of the .xz files is split in 40MB segments.  Cat it back together and extract it right into the top level of the code tree here, then continue the setup below.**
-1. copy the home-tommy-mypy/ directory to ~/mypy
-1. configure virtualenvwrapper to use the mypy python installation
+1. execute the `./reassemble.sh` bash script from within the top level of the repo source tree
+1. copy the home-tommy-mypy/ directory to your homedir and rename it to "mypy"
+1. configure virtualenvwrapper to use the mypy python installation (step 2)
 1. make a symlink called /home/tommy and point it at your homedir (sorry, but that's how the custom python was compiled in this case)
-1. copy files from usr--bin.tar.xz to your /usr/bin directory (when in dobt, don't overwrite pre-existing files!)
+1. copy files from usr--bin.tar.xz to your /usr/bin directory (when in doubt, don't overwrite pre-existing files!)
 1. copy files from usr--lib--python2.7--site-packages.tar.xz to /usr/lib/python2.7/site-packages (when in doubt, don't overwrite!)
-1. install the rpm packages
-1. leave the \*.sh files alone.  They're for me--not you ;-)
+1. carefully install the rpm packages, taking great care not to break your system.
+1. leave the other \*.sh files alone.  They're to assist me in rolling up a new release — not for you ;-)
 
 ## Freezing (saving) your models...
 ...Requires the h5 RPMs and their dependencies to be installed.  That list of rpm packages is found in the rpms subdirectory at the top of this repository's file tree.  `yum install` these packages, and see https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model for further details on saving your models.
@@ -109,12 +109,15 @@ imagesize==0.7.1
 ipykernel==4.6.1
 ipython==5.5.0
 ipython-genutils==0.2.0
+ipywidgets==7.1.0
 isort==4.2.15
 jedi==0.11.0
 Jinja2==2.10
 joblib==0.11
 jsonschema==2.6.0
-jupyter-client==5.1.0
+jupyter==1.0.0
+jupyter-client==5.2.1
+jupyter-console==5.2.0
 jupyter-core==4.4.0
 Keras==2.0.9
 keras-datasets==0.1.0
@@ -131,12 +134,13 @@ mxnet==0.12.0
 nbconvert==5.3.1
 nbformat==4.4.0
 nolearn==0.6.0
+notebook==5.3.1
 numpy==1.13.3
 numpydoc==0.7.0
 packaging==16.8
 pandas==0.21.0
-pandas-transformers==0.2.3
 pandas2sklearn==0.0.3
+pandas-transformers==0.2.3
 pandocfilters==1.4.2
 parso==0.1.0
 pathlib2==2.3.0
@@ -148,6 +152,7 @@ protobuf==3.4.0
 psutil==5.4.1
 ptyprocess==0.5.2
 pycodestyle==2.3.1
+pydot==1.2.3
 pyflakes==1.6.0
 Pygments==2.2.0
 pylint==1.7.4
@@ -167,6 +172,7 @@ rope==0.10.7
 scandir==1.6
 scikit-learn==0.19.1
 scipy==1.0.0
+Send2Trash==1.4.2
 simplegeneric==0.8.1
 singledispatch==3.4.0.3
 six==1.11.0
@@ -187,6 +193,7 @@ subprocess32==3.2.7
 tabulate==0.8.1
 tensorflow==1.4.0
 tensorflow-tensorboard==0.4.0rc2
+terminado==0.8.1
 testpath==0.3.1
 Theano==0.9.0
 torch==0.2.0.post3
@@ -196,5 +203,6 @@ typing==3.6.2
 urllib3==1.22
 wcwidth==0.1.7
 Werkzeug==0.12.2
+widgetsnbextension==3.1.0
 wrapt==1.10.11
 ```
