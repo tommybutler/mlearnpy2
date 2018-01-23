@@ -1,0 +1,6 @@
+*.swp
+*.swo
+*~
+.build
+*vimsess
+bigfiles.tar.xz
