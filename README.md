@@ -38,7 +38,7 @@ fi
 - gensim
 - h5py, h5py-wrapper, h5json, h5config, h5browse, h5df
 - keras
-- jupyter notebook
+- jupyter notebook (terminal disabled)
 - lasagne
 - matplotlib
 - networkx
