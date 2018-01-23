@@ -4,3 +4,7 @@
 .build
 *vimsess
 bigfiles.tar.xz
+*terminado.js
+*xterm.js
+home--tommy--mypy/mypy/lib/python2.7/site-packages/notebook/static/terminal
+home--tommy--mypy/mypy/lib/python2.7/site-packages/notebook/terminal
