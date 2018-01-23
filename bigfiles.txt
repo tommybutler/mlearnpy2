@@ -1,0 +1,14 @@
+mypy/lib/python2.7/site-packages/tensorflow/python/_pywrap_tensorflow_internal.so
+mypy/lib/python2.7/site-packages/torch/lib/libTH.so.1
+mypy/lib/python2.7/site-packages/torch/lib/libcurand-5c46e900.so.7.5.18
+mypy/lib/python2.7/site-packages/torch/lib/libTHC.so.1
+mypy/lib/python2.7/site-packages/torch/lib/libcudnn-9c0f9a11.so.6.0.21
+mypy/lib/python2.7/site-packages/torch/lib/libcusparse-652fe42d.so.7.5.18
+mypy/lib/python2.7/site-packages/torch/lib/libTHCUNN.so.1
+mypy/lib/python2.7/site-packages/torch/lib/libnccl.so.1
+mypy/lib/python2.7/site-packages/torch/_C.so
+mypy/lib/python2.7/site-packages/pystan/_api.so
+mypy/lib/python2.7/site-packages/scipy/.libs/libopenblasp-r0-39a31c03.2.18.so
+mypy/lib/python2.7/site-packages/scipy/sparse/_sparsetools.so
+mypy/lib/python2.7/site-packages/numpy/.libs/libopenblasp-r0-39a31c03.2.18.so
+mypy/lib/python2.7/site-packages/mxnet/libmxnet.so
