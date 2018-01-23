@@ -21,7 +21,7 @@ then
 fi
 ```
 1. verify sha512 checksums in, and the gpg signature for the sha512sums.txt file
-1. **MAKE NOTE! one of the .xz files is split in 40MB segments.  Cat it back together and extract it back into the home-tommy-mypy/ directory for use in the setup below.**
+1. **MAKE NOTE! one of the .xz files is split in 40MB segments.  Cat it back together and extract it right into the top level of the code tree here, then continue the setup below.**
 1. copy the home-tommy-mypy/ directory to ~/mypy
 1. configure virtualenvwrapper to use the mypy python installation
 1. make a symlink called /home/tommy and point it at your homedir (sorry, but that's how the custom python was compiled in this case)
