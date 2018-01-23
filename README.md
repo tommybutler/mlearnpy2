@@ -1,4 +1,4 @@
-# mlearnpy
+# mlearnpy2
 CentOS 7 / RHEL 7 machine learning setup with Python 2.7
 
 GPU support is not included, as this setup is tailored to a headless VM/bare metal server setup.
@@ -28,6 +28,7 @@ fi
 1. copy files from usr--bin.tar.xz to your /usr/bin directory (when in dobt, don't overwrite pre-existing files!)
 1. copy files from usr--lib--python2.7--site-packages.tar.xz to /usr/lib/python2.7/site-packages (when in doubt, don't overwrite!)
 1. install the rpm packages
+1. leave the \*.sh files alone.  They're for me--not you ;-)
 
 ## Freezing (saving) your models...
 ...Requires the h5 RPMs and their dependencies to be installed.  That list of rpm packages is found in the rpms subdirectory at the top of this repository's file tree.  `yum install` these packages, and see https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model for further details on saving your models.
@@ -36,6 +37,7 @@ fi
 - cython
 - h5py, h5py-wrapper, h5json, h5config, h5browse, h5df
 - keras
+- jupyter notebook
 - lasagne
 - matplotlib
 - nolearn
