@@ -14,11 +14,11 @@ This repository of utilities does not come with an installer.  It is also assume
 1. add this to end of your .bashrc file
 ```bash
 # Python VirtualEnvWrapper
-if [[ -e /usr/local/bin/virtualenvwrapper.sh ]]
+if [[ "`which virtualenvwrapper.sh`" != '' ]]
 then
-   export WORKON_HOME=~/python3
-   export VIRTUALENV_PYTHON=/usr/bin/python3
-   source /usr/local/bin/virtualenvwrapper.sh
+   export WORKON_HOME=~/mypy
+   source "`which virtualenvwrapper.sh`"
+   workon mypy
 fi
 ```
 1. execute the `./reassemble.sh` bash script from within the top level of the repo source tree
@@ -70,6 +70,7 @@ fi
 - tensorflow
 - theano
 - virtualenvwrapper
+- pyodbc (requires unixODBC package (.rpm) to be installed)
 ...and all their dependencies
 
 ## pip freeze output
