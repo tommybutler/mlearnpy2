@@ -157,8 +157,8 @@ numpy==1.14.0
 numpydoc==0.7.0
 packaging==16.8
 pandas==0.21.0
-pandas2sklearn==0.0.3
 pandas-transformers==0.2.3
+pandas2sklearn==0.0.3
 pandocfilters==1.4.2
 parso==0.1.0
 pathlib2==2.3.0
@@ -179,6 +179,7 @@ Pygments==2.2.0
 pylds==0.0.5
 pylint==1.7.4
 pymc==2.3.6
+pyodbc==4.0.23
 PyOpenGL==3.1.0
 pyparsing==2.2.0
 pypolyagamma==1.1.4
